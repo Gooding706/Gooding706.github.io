@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Page Two</title>
+  </head>
+  <body style="background-color:#080808">
+    <h1 style="font-weight: bold; color:white;font-family:Verdana,sans-serif;text-align:center;">WHAT IS YOUR FIRST NAME</h1>
+    <h3 style=" color:white;font-family:Verdana,sans-serif;text-align:center;">(NO CAPS)</h3>
+    <input type="text" id="question1" style="width:200px; height:100px; border: none;font-size: 30px;font-weight: bold; margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%"> <br>
+    <button onclick="question1()" style="border: none;font-size: 16px;font-weight: bold; margin-left:auto;margin-right:auto;display:block;margin-top:1%;margin-bottom:0%">Check if your answer is correct?</button>
+  </body>
+  <script>
+function question1() {
+    var value = document.getElementById("question1").value;
+    if (value == "wyatt") {
+        window.location.replace("https://www.youtube.com/watch?v=oHg5SJYRHA0");
+    } else {
+        window.alert("try again");
+    }
+}
+</script>
+
+</html>
