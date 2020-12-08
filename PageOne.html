@@ -4,7 +4,22 @@
     <meta charset="utf-8">
     <title>Page One</title>
   </head>
-  <body>
-    <h1>hi</h1>
+  <body style="background-color:#080808">
+    <h1 style="font-weight: bold; color:white;font-family:Verdana,sans-serif;text-align:center;">WHAT YEAR WAS KIRBY FOUNDED</h1>
+    <h3 style=" color:white;font-family:Verdana,sans-serif;text-align:center;">(This is an easy one)</h3>
+    <input type="text" id="question1" style="width:200px; height:100px; border: none;font-size: 30px;font-weight: bold; margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%"> <br>
+    <button onclick="question1()" style="border: none;font-size: 16px;font-weight: bold; margin-left:auto;margin-right:auto;display:block;margin-top:1%;margin-bottom:0%">Check if your answer is correct?</button>
   </body>
+  <script>
+function question1() {
+    var value = document.getElementById("question1").value;
+    if (value == 1994) {
+        window.location.replace("http://www.w3schools.com");
+    } else {
+        window.alert("try again");
+    }
+}
+</script>
+
 </html>
+
